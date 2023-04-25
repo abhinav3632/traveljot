@@ -5,6 +5,9 @@ import 'mapbox-gl/dist/mapbox-gl.css';
 import { listLogEntries } from './API';
 import LogEntryForm from './LogEntryForm';
 
+import mapboxgl from 'mapbox-gl';
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
+
 function Memoir() {
   const [logEntries, setLogEntries] = useState([]);
   const [showPopup, setShowPopup] = useState({});
