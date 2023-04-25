@@ -6,8 +6,9 @@ import { listLogEntries } from './API';
 import LogEntryForm from './LogEntryForm';
 
 import mapboxgl from 'mapbox-gl';
-import Worker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
-mapboxgl.workerClass = Worker;
+
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 
 function Memoir() {
   const [logEntries, setLogEntries] = useState([]);
