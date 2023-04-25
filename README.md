@@ -3,8 +3,7 @@
 
 Traveljot is a travel log app that provides an easy and interactive way for users to add their memories to specific locations on a map. TravelJot is one such travel log app that provides users with a range of features for managing their travel experiences efficiently.
 
-##Go to the backend branch for the server side code. Main branch contains client side code only.
-
+## Go to backend branch for server side code. Main branch contains only the front-end code.
 
 ## Authors
 
