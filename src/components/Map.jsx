@@ -6,9 +6,8 @@ import { listLogEntries } from './API';
 import LogEntryForm from './LogEntryForm';
 
 import mapboxgl from 'mapbox-gl';
-import MapboxWorker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
-
-mapboxgl.workerClass = MapboxWorker;
+import Worker from 'worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker';
+mapboxgl.workerClass = Worker;
 
 function Memoir() {
   const [logEntries, setLogEntries] = useState([]);
