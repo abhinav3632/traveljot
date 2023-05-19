@@ -72,7 +72,7 @@ const Weather = () => {
         setTimeout(() => {
           setData(res.data);
           setLoading(false);
-        }, 1500);
+        });
       })
       .catch((err) => {
         setLoading(false);
